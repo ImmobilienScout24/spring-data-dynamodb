@@ -8,33 +8,36 @@
 	<version>1.0.1-SNAPSHOT</version>
 	<name>Spring Data DynamoDb</name>
 	<description>Spring Data module providing support for DynamoDb repositories.</description>
-	<url>http://github.com/michaellavelle/spring-data-dynamodb</url>
+	<url>http://github.com/ImmobilienScout24/spring-data-dynamodb</url>
 
-	<parent>
-		<groupId>org.springframework.data.build</groupId>
-		<artifactId>spring-data-parent</artifactId>
-		<version>1.5.0.RELEASE</version>
-		<relativePath>../spring-data-build/parent/pom.xml</relativePath>
-	</parent>
+  <parent>
+    <groupId>de.is24</groupId>
+    <artifactId>pom-with-repositories-and-current-plugins</artifactId>
+    <version>1.35</version>
+  </parent>
 	
-        <distributionManagement>
-           	<repository>
-        		<id>repo</id>
-        			<url>https://github.com/OpenSourceAgility/opensourceagility-mvn-repo/raw/master/releases</url>
-        		</repository>
-        		<snapshotRepository>
-        			<id>snapshot-repo</id>
-        			<url>https://github.com/OpenSourceAgility/opensourceagility-mvn-repo/raw/master/snapshots</url>
-        		</snapshotRepository>
-        </distributionManagement>
+  <distributionManagement>
+      <repository>
+      <id>repo</id>
+        <url>https://github.com/OpenSourceAgility/opensourceagility-mvn-repo/raw/master/releases</url>
+      </repository>
+      <snapshotRepository>
+        <id>snapshot-repo</id>
+        <url>https://github.com/OpenSourceAgility/opensourceagility-mvn-repo/raw/master/snapshots</url>
+      </snapshotRepository>
+  </distributionManagement>
 
 	<properties>
 		<dist.key>DATADYNAMODB</dist.key>
 		<commons.collections>3.2.1</commons.collections>
 		<commons.lang>3.1</commons.lang>
 		<httpcomponents>4.2.2</httpcomponents>
-		<springdata.commons>1.9.0.RELEASE</springdata.commons>
-		<aws-java-sdk>1.9.0</aws-java-sdk>
+		<springdata.commons>1.9.1.RELEASE</springdata.commons>
+		<aws-java-sdk>1.9.6</aws-java-sdk>
+    <spring>4.1.2.RELEASE</spring>
+    <jodatime>2.5</jodatime>
+    <cdi>1.1</cdi>
+    <webbeans>1.2.6</webbeans>    
 	</properties>
 
 	<developers>
@@ -173,6 +176,20 @@
 			<version>1.3.168</version>
 			<scope>test</scope>
 		</dependency>
+    
+    <!-- Test -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-all</artifactId>
+      <version>1.9.5</version>
+      <scope>test</scope>
+    </dependency>
 	</dependencies>
 
 	<build>
@@ -206,18 +223,20 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>
+        <version>2.4</version>
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>wagon-maven-plugin</artifactId>
+        <version>1.0-beta-4</version>
 			</plugin>
 		</plugins>
 	</build>
 
 	<scm>
-		<url>https://github.com/michaellavelle/spring-data-dynamodb</url>
-		<connection>scm:git:git://github.com/michaellavelle/spring-data-dynamodb.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com:michaellavelle/spring-data-dynamodb.git</developerConnection>
+		<url>https://github.com/ImmobilienScout24/spring-data-dynamodb</url>
+		<connection>scm:git:git://github.com/ImmobilienScout24/spring-data-dynamodb.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com:ImmobilienScout24/spring-data-dynamodb.git</developerConnection>
 	</scm>
 
 	<repositories>
