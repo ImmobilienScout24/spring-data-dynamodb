@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.socialsignin</groupId>
 	<artifactId>spring-data-dynamodb</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.1</version>
 	<name>Spring Data DynamoDb</name>
 	<description>Spring Data module providing support for DynamoDb repositories.</description>
 	<url>http://github.com/ImmobilienScout24/spring-data-dynamodb</url>
@@ -237,7 +236,8 @@
 		<url>https://github.com/ImmobilienScout24/spring-data-dynamodb</url>
 		<connection>scm:git:git://github.com/ImmobilienScout24/spring-data-dynamodb.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com:ImmobilienScout24/spring-data-dynamodb.git</developerConnection>
-	</scm>
+	  <tag>spring-data-dynamodb-1.0.1</tag>
+  </scm>
 
 	<repositories>
 		<repository>
