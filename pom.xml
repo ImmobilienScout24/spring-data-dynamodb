@@ -15,17 +15,6 @@
     <artifactId>pom-with-repositories-and-current-plugins</artifactId>
     <version>1.35</version>
   </parent>
-	
-  <distributionManagement>
-      <repository>
-      <id>repo</id>
-        <url>https://github.com/OpenSourceAgility/opensourceagility-mvn-repo/raw/master/releases</url>
-      </repository>
-      <snapshotRepository>
-        <id>snapshot-repo</id>
-        <url>https://github.com/OpenSourceAgility/opensourceagility-mvn-repo/raw/master/snapshots</url>
-      </snapshotRepository>
-  </distributionManagement>
 
 	<properties>
 		<dist.key>DATADYNAMODB</dist.key>
@@ -244,8 +233,8 @@
 			<id>spring-libs-snapshot</id>
 			<url>http://repo.springsource.org/libs-snapshot</url>
 		</repository>
-
 	</repositories>
+  
 	<pluginRepositories>
 		<pluginRepository>
 			<id>com.springsource.repository.bundles.release</id>
